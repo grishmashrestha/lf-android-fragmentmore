@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!--No matter what width and height we pass here,
+it will only take the params of the <fragment> -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="vertical"
+    android:id="@id/inflated_view"
+    android:layout_below="@+id/green">
+
+</RelativeLayout>

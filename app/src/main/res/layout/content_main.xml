@@ -8,12 +8,33 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/container"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.grishma.fragmenttestmore.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
+    <Button
+        android:id="@+id/red"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Red"
+        android:layout_alignParentLeft="true"
+        android:onClick="onPressRed" />
+
+    <Button
+        android:id="@+id/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue"
+        android:layout_toRightOf="@id/red"
+        android:onClick="onPressBlue" />
+
+    <Button
+        android:id="@+id/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green"
+        android:layout_toRightOf="@id/blue"
+        android:onClick="onPressGreen"/>
+
 </RelativeLayout>
