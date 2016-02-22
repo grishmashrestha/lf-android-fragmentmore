@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentA fragmentA = new FragmentA();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-        fragmentTransaction.replace(R.id.container, fragmentA, "FragmentA");
+        fragmentTransaction.add(R.id.inflated_view_parent, fragmentA, "FragmentA");
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentB fragmentB = new FragmentB();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-        fragmentTransaction.replace(R.id.container, fragmentB, "FragmentB");
+        fragmentTransaction.add(R.id.inflated_view_parent, fragmentB, "FragmentB");
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentC fragmentC = new FragmentC();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-        fragmentTransaction.replace(R.id.container, fragmentC, "FragmentC");
+        fragmentTransaction.add(R.id.inflated_view_parent, fragmentC, "FragmentC");
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }

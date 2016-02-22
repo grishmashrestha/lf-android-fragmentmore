@@ -37,4 +37,12 @@
         android:layout_toRightOf="@id/blue"
         android:onClick="onPressGreen"/>
 
+    <LinearLayout
+        android:id="@+id/inflated_view_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/green"
+        android:orientation="vertical">
+    </LinearLayout>
+
 </RelativeLayout>
